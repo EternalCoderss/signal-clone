@@ -6,7 +6,7 @@ import { StatusBar } from "expo-status-bar";
 import { useState } from 'react';
 
 
-const LoginScreen = () => {
+const LoginScreen = ({ Navigation }) => {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
 
@@ -53,6 +53,11 @@ const styles = StyleSheet.create({
         justifyContent: "center",
         padding: 10,
     },
-    inputContainer: {},
-    button: {},
+    inputContainer: {
+        width: 300,
+    },
+    button: {
+        width: 200,
+        marginTop: 10,
+    },
 })
