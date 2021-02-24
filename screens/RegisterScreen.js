@@ -8,7 +8,7 @@ const RegisterScreen = ({ navigation }) => {
         <KeyboardAvoidingView behavior='padding'  style={styles.container}>
           <StatusBar style="light" />
 
-            <Text h3 style={{ marginBottom: 50 }}>
+            <Text h3 style = {{ marginBottom: 50 }}>
                 Create a Signal account
             </Text>
         </KeyboardAvoidingView>
