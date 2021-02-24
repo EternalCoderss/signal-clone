@@ -7,9 +7,12 @@ import { useState } from 'react';
 const LoginScreen = () => {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
-    
+
+    const signIn = () => {
+
+    }
     return (
-        <View>
+        <View style={styles.container}>
             <StatusBar style="light" />
             <Image source={{
                 url:"https://ffp4g1ylyit3jdyti1hqcvtb-wpengine.netdna-ssl.com/internetcitizen/files/2018/08/signal-logo.png"
@@ -33,7 +36,7 @@ const LoginScreen = () => {
                 onChangeText={text => 
                     setPassword(text)}/>
             </View>
-            <Button containerStyle= { styles.button } title="Login" />
+            <Button containerStyle= { styles.button } onPress={signIn} title="Login" />
             <Button containerStyle= { styles.button } type="outline" title="Register" />
         </View>
     )
