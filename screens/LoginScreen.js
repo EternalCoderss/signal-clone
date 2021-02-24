@@ -24,23 +24,24 @@ const LoginScreen = () => {
                 value={ email } 
                 onChangeText={text => 
                 setEmail(text)} />
+
                 <Input 
                 placeholder="Password" 
                 secureTextEntry 
                 type="password" 
                 value={ password }
                 onChangeText={text => 
-                    setPassword(password)}/>
+                    setPassword(text)}/>
             </View>
+            <Button containerStyle= { styles.button } title="Login" />
+            <Button containerStyle= { styles.button } type="outline" title="Register" />
         </View>
     )
 }
-
 export default LoginScreen
 
 const styles = StyleSheet.create({
 
-    inputContainer: {
-
-    },
+    inputContainer: {},
+    button: {},
 })
