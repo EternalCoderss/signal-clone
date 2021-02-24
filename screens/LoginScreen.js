@@ -6,7 +6,7 @@ import { StatusBar } from "expo-status-bar";
 import { useState } from 'react';
 
 
-const LoginScreen = ({ Navigation }) => {
+const LoginScreen = ({ navigation }) => {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
 
@@ -14,7 +14,7 @@ const LoginScreen = ({ Navigation }) => {
 
     }
     return (
-        <KeyboardAvoidingView behavior='padding'   style={styles.container}>
+        <KeyboardAvoidingView behavior='padding' style={styles.container}>
             <StatusBar style="light" />
             <Image source={{
                 url:"https://ffp4g1ylyit3jdyti1hqcvtb-wpengine.netdna-ssl.com/internetcitizen/files/2018/08/signal-logo.png"
