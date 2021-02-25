@@ -7,8 +7,8 @@ import { useState } from 'react';
 
 
 const LoginScreen = ({ navigation }) => {
-    const [email, setEmail] = useState('')
-    const [password, setPassword] = useState('')
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
 
     const signIn = () => {
 
@@ -27,16 +27,14 @@ const LoginScreen = ({ navigation }) => {
                 autoFocus 
                 type="email" 
                 value={ email } 
-                onChangeText={text => 
-                setEmail(text)} />
+                onChangeText={(text) => setEmail(text)} />
 
                 <Input 
                 placeholder="Password" 
                 secureTextEntry 
                 type="password" 
                 value={ password }
-                onChangeText={text => 
-                    setPassword(text)}/>
+                onChangeText={(text) => setPassword(text)}/>
             </View>
             <Button containerStyle= { styles.button } onPress={signIn} title="Login" />
             <Button onPress={() => navigation.navigate("Register")} containerStyle= { styles.button } type="outline" title="Register" />
