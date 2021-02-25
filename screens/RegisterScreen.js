@@ -49,6 +49,7 @@ const RegisterScreen = ({ navigation }) => {
                 />
             </View>
             <Button raised onPress={register} title="Register"/>
+            <View style={{ height: 110}}/>
         </KeyboardAvoidingView>
     )
 }
@@ -56,6 +57,17 @@ const RegisterScreen = ({ navigation }) => {
 export default RegisterScreen
 
 const styles = StyleSheet.create({
-    container: {},
-
+    container: {
+        flex: 1,
+        alignItems: "center",
+        justifyContent: "center",
+        padding: 10,
+    },
+    button: {
+        width: 200,
+        marginTop: 10,
+    },
+    inputContainer: {
+        width: 300,
+    },
 })
