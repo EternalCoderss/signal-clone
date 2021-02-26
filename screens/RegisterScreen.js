@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useLayoutEffect } from 'react'
 import { StyleSheet, View } from 'react-native'
 import { KeyboardAvoidingView } from "react-native";
 import { Button, Input, Text } from "react-native-elements";
@@ -10,6 +10,12 @@ const RegisterScreen = ({ navigation }) => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [imageUrl, setImageUrl] = useState("");
+
+    useLayoutEffect(() => {
+        navigation.setOptions({
+            headerBackTitle: "ABC",
+        })
+    }, [navigation]);
 
     const register = () => {};
     return (    
