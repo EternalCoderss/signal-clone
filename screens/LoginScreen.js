@@ -17,9 +17,8 @@ const LoginScreen = ({ navigation }) => {
                 navigation.replce('Home');
             }
         });
-        return() => {
-            unsubscribe()
-        }
+        
+        return unsubscribe();
     }, []);
 
     const signIn = () => {
