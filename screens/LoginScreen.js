@@ -13,11 +13,12 @@ const LoginScreen = ({ navigation }) => {
 
     useEffect(() => {
         const unsubscribe = auth.onAuthStateChanged(( authuser) => {
+                console.log(authUser);
             if(authuser) {
                 navigation.replce('Home');
             }
         });
-        
+
         return unsubscribe();
     }, []);
 
