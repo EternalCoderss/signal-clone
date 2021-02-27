@@ -1,11 +1,14 @@
 import React from 'react'
+import { SafeAreaView } from 'react-native'
 import { StyleSheet, Text, View } from 'react-native'
 
 const HomeScreen = () => {
     return (
-        <View>
-            <Text> This is Home page screen</Text>
-        </View>
+        <SafeAreaView>
+            <ScrollView>
+                
+            </ScrollView>
+        </SafeAreaView>
     )
 }
 
