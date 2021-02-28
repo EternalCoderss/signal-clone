@@ -12,7 +12,13 @@ const CustomListItem = () => {
                     "https://www.flaticon.com/free-icon/user_149071?term=user%20avatar&page=1&position=10&page=1&position=10&related_id=149071&origin=tag"
                 }}
             />
-        </ListItem>
+             <ListItem.Content>
+                 <ListItem.Title style={{ fontWeight: "800" }}>
+                     Youtube Chat
+                 </ListItem.Title>
+             </ListItem.Content>
+
+        </ListItem.Title>
     )
 }
 
