@@ -23,7 +23,7 @@ const RegisterScreen = ({ navigation }) => {
         .then(authUser => {
             authUser.user.updateProfile({
                 displayName: name,
-                photoURL: imageUrl || "https://cencup.com/wp-content/uploads/2019/07/avatar.placeholder.png"
+                photoURL: imageUrl || "https://www.flaticon.com/free-icon/user_149071?term=user%20avatar&page=1&position=10&page=1&position=10&related_id=149071&origin=tag"
             });
         }).catch(error => alert(error.message))
     };
